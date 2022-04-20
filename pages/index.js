@@ -92,6 +92,36 @@ export default function Index() {
               //  <CardProduct key={idx} prop={item}/>
             )
         })}
+        {data.map( (item,idx) => {
+           return (
+            
+            <GridCustom  item xs={3}  key={idx} >
+              <CardProduct image={item.image} title={item.title} price={item.price} category={item.category} description={item.description} rating={item.rating}/>
+            </GridCustom>
+              
+              //  <CardProduct key={idx} prop={item}/>
+            )
+        })}
+        {data.map( (item,idx) => {
+           return (
+            
+            <GridCustom  item xs={3}  key={idx} >
+              <CardProduct image={item.image} title={item.title} price={item.price} category={item.category} description={item.description} rating={item.rating}/>
+            </GridCustom>
+              
+              //  <CardProduct key={idx} prop={item}/>
+            )
+        })}
+        {data.map( (item,idx) => {
+           return (
+            
+            <GridCustom  item xs={3}  key={idx} >
+              <CardProduct image={item.image} title={item.title} price={item.price} category={item.category} description={item.description} rating={item.rating}/>
+            </GridCustom>
+              
+              //  <CardProduct key={idx} prop={item}/>
+            )
+        })}
         </Grid>
        </SuggestionSlot>
       </Layout>

@@ -6,6 +6,7 @@ const nextConfig = {
   },
   images: {
     domains: ["raw.githubusercontent.com","drive.google.com","fakestoreapi.com"],
+    loading:"lazy",
   }
 }
 

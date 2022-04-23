@@ -58,6 +58,10 @@ export default function Index() {
   useEffect(() => {
     fetchData()
   },[])
+ 
+   
+
+  
   if(!data){
     return <div>Loading ... </div>
   }
@@ -71,6 +75,7 @@ export default function Index() {
       <Layout>
        <CatalogParagraph>
          <p>หมวดหมู่สินค้า</p>
+         
        </CatalogParagraph>
        <CatalogSlot>
 

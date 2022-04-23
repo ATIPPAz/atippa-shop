@@ -28,7 +28,6 @@ margin:20px;
 `
 
 const CardProduct = (prop) => {
-  console.log(prop)
   return(
     <Contrainer>
       <Grid container spacing={1}>

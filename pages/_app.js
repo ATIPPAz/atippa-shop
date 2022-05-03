@@ -1,5 +1,5 @@
 import Footer from "../components/Footer"
-import {DefaultLayout} from "../components/Layout";
+import DefaultLayout from "../components/Layout";
 import Nav from "../components/Nav";
 
 function  Myapp({Component,pageProps}){

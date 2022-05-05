@@ -1,31 +1,15 @@
 import React from "react";
 import Nav from "./Nav";
 import styled from "@emotion/styled";
-
-
-const Body = styled.div`
-
-`
-
-const BodyContrainer = styled.div`padding:0px 200px;`
+const Container = styled.div`
+max-width: 1472px;
+margin: 0 auto;`
 function DefaultLayout({children}) {
   
   return (
-    
-    <>
-    {/* <style jsx global>
-{`
-body {
-  margin:0;
-  padding:0;}`
-}
-</style> */}
-      <Body>
-        <BodyContrainer>
+    <Container>
           {children}
-        </BodyContrainer>
-      </Body>
-    </>
+    </Container>
   );
 }
 

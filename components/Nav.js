@@ -33,9 +33,8 @@ height:calc(100% );`
 function Nav(){
   return (
     <Container>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet" />
+
+
     <Box sx={{ flexGrow: 1,padding:"0px 200px" }}>
       <Grid container spacing={1}>
         <Grid item xs={4}>

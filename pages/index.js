@@ -11,6 +11,14 @@ import CatagoryCard from "../components/CatagoryCard/CatagoryCard";
 const GridCatogory =  styled.div`
   display: flex;
   background-color: #f5f5f5;
+
+  `
+
+const GridProduct =  styled.div`
+  display: flex;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+  margin: 0px auto;
   `
 
 const Slot =  styled.div`
@@ -35,7 +43,7 @@ background-color: #ffffff;
 const TextSlot = styled.div`
 width:100%;
 height:100%;
-padding:20px 20px;
+padding:20px 0px 20px 0px;
 background-color: #ffffff;
 color: #757575;
 `
@@ -82,7 +90,7 @@ export default function Index() {
        <Contrainer>
           <Slot>
             <TextSlot>
-              หมวดหมู่
+              <p>หมวดหมู่</p>
             </TextSlot>
             <GridCatogory >
               { catagoriesData.map((catagory,index)=> {
@@ -94,15 +102,15 @@ export default function Index() {
           </Slot>
           <Slot>
           <TextSlot>
-              สินค้าเเนะนำ
+          <p>สินค้าเเนะนำ</p>
             </TextSlot>
-            <GridCatogory >
+            <GridProduct >
               { data.map((item,index)=> {
                 return(
                   <CardProduct key={index} image={item.image} title={item.title} price={item.price} category={item.category} description={item.description} rating={item.rating}/>
                 )
               })}
-            </GridCatogory>
+            </GridProduct>
           </Slot>
        </Contrainer>
   );

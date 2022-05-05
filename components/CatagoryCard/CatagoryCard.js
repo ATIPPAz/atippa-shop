@@ -15,6 +15,7 @@ text-align:center;
 
 const Contrainer = styleds.div`
 width:100px;
+
 height:95px;
 background-color: #ffffff;
 margin:1px 1px 1px 0px;
